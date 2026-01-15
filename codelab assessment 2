@@ -1,0 +1,103 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOZIr5sNWSR5D8QyNbIhG94",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/somethingevilmighthappen/assessment-1-code-lab/blob/main/codelab%20assessment%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 14,
+      "metadata": {
+        "id": "MnLaBBF-y3-K",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "5398b033-9377-4ed4-cc74-b2ef494310f5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Welcome to my vending machine!\n",
+            "\n",
+            "product price code\n",
+            "Kitkat $2 1111\n",
+            "Coke $3 2222\n",
+            "Lays 2$ 3333\n",
+            "your balance is 10$\n",
+            "Type a product code to continue...\n",
+            "2222\n",
+            "You picked Coke. Please insert 3$.\n"
+          ]
+        }
+      ],
+      "source": [
+        "# ================ Vending Machine Menu ================ (displaying product info)\n",
+        "print(\"Welcome to my vending machine!\\n\")\n",
+        "print(\"product price code\")\n",
+        "print(\"Kitkat $2 1111\")\n",
+        "print(\"Coke $3 2222\")\n",
+        "print(\"Lays 2$ 3333\")\n",
+        "print(\"your balance is 10$\")\n",
+        "\n",
+        "# make a variable for products\n",
+        "# list of variables\n",
+        "kitkatPrice = 2\n",
+        "cokePrice = 3\n",
+        "laysPrice = 2\n",
+        "#ask user to type a code\n",
+        "print(\"Type a product code to continue...\")\n",
+        "\n",
+        "# use an int(input()) function to save responses in a variable\n",
+        "# its called userCode\n",
+        "\n",
+        "userCode = int(input())\n",
+        "\n",
+        "# going to use an if condition to check if the userCode is equal to 1111, if true it should print: you picked kitkat. pay up 2$ or something similar\n",
+        "if userCode == 1111:\n",
+        "    print(\"You picked Kitkat. Please insert 2$.\")\n",
+        "\n",
+        "# now ill use an elif condition to check if the userCode is 2222, if true it will print: you picked coke woaw. give me 3$. side note I need to add another variable for the coke price\n",
+        "\n",
+        "elif userCode == 2222:\n",
+        "  print(\"You picked Coke. Please insert 3$.\")\n",
+        "elif userCode == 3333:\n",
+        "  print(\"You picked Lays. Please insert 2$.\")\n",
+        "else:\n",
+        "  print(\"Invalid code.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "KjxDDNn2_scz"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
